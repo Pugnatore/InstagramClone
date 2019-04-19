@@ -1,0 +1,44 @@
+
+
+
+  <div class="row" *ngFor="let publicacao of publicacoes">
+    <div class="col d-flex justify-content-center">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text"><strong>{{publicacao.nome_usuario}}</strong></p>
+        </div>
+  
+        <img class="card-img" [src]="publicacao.url_imagem||''" />
+        
+        <div class="card-body">
+          <p class="card-text">
+            <strong>{{publicacao.nome_usuario}}</strong> {{publicacao.titulo}}
+          </p>
+  
+          <hr />
+          
+            <div *ngIf="publicacao.peopleThatLiked===email; else naogostou">
+              <button type="button" (click)="gostar(publicacao)" class="btn btn-danger btn-circle"><i class="glyphicon glyphicon-heart"></i></button>
+              <button type="button" class="btn btn-comentario btn-circle"><i (click)="mostrarComentarios(publicacao)" class="glyphicon glyphicon-comment"></i></button>
+            </div>
+            <ng-template #naogostou>
+              <button type="button" (click)="gostar(publicacao)" class=" btn btn-naogostou" ><i class="far fa-heart"></i></button>
+              <button type="button" class="btn btn-comentario btn-circle"><i (click)="mostrarComentarios(publicacao)" class="glyphicon glyphicon-comment"></i></button>
+            </ng-template>
+        
+            
+       
+          <input 
+            [hidden]="!publicacao.mostrar_comentarios"
+            type="text" 
+            class="form-control comentario"
+            placeholder="Adicione um comentário..." 
+          />
+          
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

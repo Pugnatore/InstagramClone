@@ -1,0 +1,59 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+.card {
+    margin-bottom: 50px;
+    border-color: #E6E6E6;
+    max-width: 600px;
+}
+
+.comentario {
+    border: 1px solid	#F0FFF0;
+    padding: 0;
+    font-size: 100%;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.btn-comentario{
+   
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+
+}
+
+.btn-comentario:hover{
+   
+    font-size: 22px;
+   
+
+}
+.btn-comentario:focus{
+    outline:0;
+}
+
+.btn-comentario:active {
+    outline: none;
+    border: none;
+    }
+  
+.btn-naogostou{
+    background-color: white;
+    font-size: 20px;
+    color: red;
+}
+.btn-naogostou:hover{
+    
+    font-size: 22px;
+    
+}
+
+

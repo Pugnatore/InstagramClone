@@ -1,0 +1,51 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+.navbar {
+    height: 77px;
+    padding: 26px 40px;
+    width: 100%;
+    border-bottom: solid 1px #E6E6E6;
+}
+
+.logo {
+    /*background-image: url('/assets/logo-instagram-2.png');*/
+    width: 110px;
+    height: 36px;
+    float: left;
+}
+
+.button{
+    background-color: white;
+    border: none;
+}
+.btn-add-post {
+   
+    width: 32px;
+    height: 20px;
+    margin-bottom: 25px;
+    
+    
+}
+
+.btn-profile{
+    
+    width: 32px;
+    height: 20px;
+    margin-bottom: 25px;
+    margin-left: 13px;
+    
+   
+    
+}
+.btn-signout{
+    
+    width: 32px;
+    height: 20px;
+    margin-bottom: 25px;
+    margin-left: 13px;
+    color: black;
+    
+
+}
+
+
+button:focus {outline:0;}

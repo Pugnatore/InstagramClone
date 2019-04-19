@@ -1,0 +1,24 @@
+<nav class="navbar fixed-top navbar-light bg-white">
+  <div class="container">
+    <div class="logo">
+      <a routerLink="/main/home">
+        <img [src]="'/assets/logo-instagram-2.png'" />
+      </a>
+    </div>
+    <div style="padding: 2px;">
+      
+      <button class="button btn-add-post" data-toggle="modal" data-target="#exampleModal"><i class="fab fa-instagram fa-2x"></i></button>
+      
+      <button [routerLink]="['./profile']" class="button btn-profile"><i class="far fa-user fa-2x"></i></button>
+      
+      <!-- <button class="button btn-signout" (click)="sair()"><i class="fas fa-sign-out-alt fa-2x"></i></button> -->
+      <a href="#" class="btn-signout fas fa-sign-out-alt fa-2x" role="button" aria-pressed="true"></a>
+     
+    
+  </div>
+  </div>  
+</nav>
+
+<app-incluir-publicacao (atualizarTimeLine)="atualizarTimeLine()"></app-incluir-publicacao>
+
+<router-outlet></router-outlet>
