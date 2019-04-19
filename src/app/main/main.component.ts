@@ -33,7 +33,7 @@ export class MainComponent implements OnInit {
 
   atualizarTimeLine(){
     this.home.atualizarTimeLine();
-    this.router.navigate(['/main/home'])
+    this.router.navigate(['/main/home']);
   }
 
   public sair():void{
